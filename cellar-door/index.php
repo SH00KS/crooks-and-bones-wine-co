@@ -1,7 +1,7 @@
 <?php
-$username = "root";
-$password = "root";
-$hostname = "localhost"; 
+$username = "sql4104755";
+$password = "JPP6XCGFUf";
+$hostname = "sql4.freemysqlhosting.net"; 
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
@@ -9,8 +9,8 @@ $dbhandle = mysql_connect($hostname, $username, $password)
 echo "Connected to MySQL<br>";
 
 //select a database to work with
-$selected = mysql_select_db("cbwc",$dbhandle) 
-  or die("Could not select cbwc");
+$selected = mysql_select_db("sql4104755",$dbhandle) 
+  or die("Could not select sql4104755");
 
 //execute the SQL query and return records
 $result = mysql_query("SELECT batch, name, type, percentage FROM wine");
